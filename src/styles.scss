@@ -1,0 +1,41 @@
+@import '../src//utilities/constants';
+
+body {
+  position: relative;
+}
+
+.Table {
+  table-layout: fixed;
+  border: 1px solid $color-blue;
+  background-color: $color-white;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+
+  tr {
+    height: 4em;
+  }
+
+  td,
+  th {
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+    overflow: hidden;
+  }
+
+  .Results td {
+    font-size: calc(3px + 2vmin);
+  }
+
+
+  tr:nth-child(even) {
+    background: $color-light-blue;
+  }
+
+}
+
+@media (min-width: 800px) {
+  .Table tr {
+    height: 3em;
+  }
+}

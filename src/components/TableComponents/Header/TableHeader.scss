@@ -1,0 +1,25 @@
+.Table-Header {
+    background: #1C6EA4;
+    background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    border-bottom: 2px solid #444444;
+}
+
+.Table-Header th {
+    position: relative;
+    font-size: calc(5px + 2vmin);
+    font-weight: bold;
+    color: #FFFFFF;
+    border-left: 2px solid #D0E4F5;
+    cursor: pointer;
+}
+
+.Table-Header th .Sort {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px;
+}
+
+.Table-Header th:first-child {
+    border-left: none;
+}

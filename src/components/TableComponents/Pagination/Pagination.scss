@@ -1,0 +1,55 @@
+@import '../../../utilities/constants';
+
+.Pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+    margin: 0;
+    max-width: 100vw;
+    font-size: 0.7em;
+}
+
+.Pagination li {
+    display: inline;
+}
+
+.Pagination li button {
+    color: black;
+    float: left;
+    padding: 0.5em;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    background: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.Pagination li.active {
+    background-color: $color-light-blue;
+    color: white;
+    border: 1px solid $color-light-blue;
+}
+
+.Pagination li:hover:not(.active) {
+    background-color: $color-light-grey;
+}
+
+.Pagination li.disabled {
+    pointer-events: none;
+}
+
+@media (min-width: 800px) {
+  .Pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin: 0;
+    max-width: 100vw;
+    font-size: 1em;
+}
+}
